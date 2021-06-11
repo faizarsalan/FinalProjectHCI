@@ -1,15 +1,22 @@
-$("div li").hide()
-    var currImg = $("li").first()
-    var currIdx = 0
-    currImg.show()
-
-    $("#nextBtn").click(function(){
-        if(currIdx == $("div li").lentgh - 1){
-            currIdx = 0
-            currImg = $("div li").first()
-        } else {
-            currIdx += 1
-            currImg = currImg.next()
-        }
-        currImg.show()
-    })
+$(document).ready(function(){
+    $('.next').on('click', function(){
+      var currentImg = $('.active');
+      var nextImg = currentImg.next();
+  
+      if(nextImg.length){
+        currentImg.removeClass('active').css('z-index', -10);
+        nextImg.addClass('active').css('z-index', 10);
+      }
+    });
+  
+    $('.prev').on('click', function(){
+      var currentImg = $('.active');
+      var prevImg = currentImg.prev();
+  
+      if(prevImg.length){
+        currentImg.removeClass('active').css('z-index', -10);
+        prevImg.addClass('active').css('z-index', 10);
+      }
+    });
+  });
+  
