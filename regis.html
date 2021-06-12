@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Registration</title>
+    <script src="./script.js"></script>
+    <title>DOTO 2 : Defenders Of The Olympus II</title>
 </head>
 <body>
     <header class="white">
@@ -19,14 +21,53 @@
             <li><a href="./heroes.html">Heroes</a></li>
             <li><a href="./gamemech.html">Game Mechanics</a></li>
             <li><a href="./merch.html">Merchandises</a>
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/arrow_over.png" alt="">
                 <ul>
                     <li>Apparels</li>
                     <li>Collectibles</li>
                 </ul>
             </li>
-            <li><a href="./regis.html"><b>Registration</b></a></li>
+            <li><a href="./regis.html"> <b>Registration</b></a></li>
         </ul>
     </nav>
+    
+    <!-- Form -->
+    <div class="headwrapper">
+        <div class="wrapper">
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="florinpop17" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="a@florin-pop.com" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password check</label>
+                    <input type="password" placeholder="Password two" id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
     <footer class="white">
         <p>Contact Us</p>
         <div class="socialmedia">
