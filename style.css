@@ -172,6 +172,38 @@ footer {
 	z-index:100;
 }
 
+#intro-content{
+	padding:20px;
+
+}
+
+#unitcontrol-content{
+	padding:20px;
+
+}
+
+#unitcontrol-content li{
+	justify-content:left;
+	list-style-type:none;
+}
+
+#shopcont-content{
+	padding:20px;
+}
+
+#shopcont-content li{
+	justify-content:left;
+	list-style-type: none;
+}
+
+#invcont-content{
+	padding:20px;
+}
+
+#invcont-content li{
+	justify-content:left;
+	list-style-type:none
+}
 
 /* Form */
 * {
