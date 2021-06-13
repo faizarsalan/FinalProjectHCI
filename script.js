@@ -30,12 +30,6 @@ const password2Error = document.getElementById('error-password2');
 const regionError = document.getElementById('error-region');
 const dateError = document.getElementById('error-date');
 
-// form.addEventListener('submit', e => {
-// 	e.preventDefault();
-	
-// 	checkInputs();
-// });
-
 function validateForm(e) {
 	var isValid = true
 	// Username
@@ -141,8 +135,7 @@ function validateForm(e) {
 			}
 			if(dateSample[i] === "/" && (i === 2 || i == 5)) {
 				flag = false;
-			}
-			console.log(dateSample[i]);			
+			}		
 		}
 		if(flag){
 			dateError.innerText = "Date of birth is not within format";

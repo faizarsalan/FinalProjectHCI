@@ -18,16 +18,16 @@
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./heroes.html">Heroes</a></li>
-            <li><a href="./gamemech.html">Game Mechanics</a></li>
-            <li><a href="./merch.html">Merchandises</a>
-                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/arrow_over.png" alt="">
+            <li><a href="./heroes.html">Heroes</a>
                 <ul>
-                    <li>Apparels</li>
-                    <li>Collectibles</li>
+                    <li> <a href="/heroes.html#int">Intelligence</a> </li>
+                    <li> <a href="/heroes.html#strength">Strength</a> </li>
+                    <li> <a href="/heroes.html#agi">Agility</a> </li>
                 </ul>
             </li>
-            <li><a href="./regis.html"> <b>Registration</b></a></li>
+            <li><a href="./gamemech.html">Game Mechanics</a></li>
+            <li><a href="./merch.html">Merchandises</a></li>
+            <li><a href="./regis.html"><b>Registration</b></a></li>
         </ul>
     </nav>
     
@@ -37,10 +37,10 @@
             <div class="headForm">
                 <h2>Create Account</h2>
             </div>
-            <form id="form" class="form" action=""  onsubmit="validateForm(event)">
+            <form id="form" method="POST" class="form" onsubmit="validateForm(event)">
                 <div class="form-control">
                     <label for="username">Username</label>
-                    <input type="text" placeholder="Username" id="username" />
+                    <input type="text" placeholder="Username" id="username"/>
                     <p id="error-username" class="errorForm"></p>
                 </div>
                 <div class="form-control">
