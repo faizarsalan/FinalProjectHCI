@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
     <title>DOTO 2 : Defenders Of The Olympus II</title>
 </head>
 <body>
@@ -34,34 +34,45 @@
     <!-- Form -->
     <div class="headwrapper">
         <div class="wrapper">
-            <form id="form" class="form">
+            <div class="headForm">
+                <h2>Create Account</h2>
+            </div>
+            <form id="form" class="form" action=""  onsubmit="validateForm(event)">
                 <div class="form-control">
                     <label for="username">Username</label>
-                    <input type="text" placeholder="florinpop17" id="username" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <input type="text" placeholder="Username" id="username" />
+                    <p id="error-username" class="errorForm"></p>
                 </div>
                 <div class="form-control">
-                    <label for="username">Email</label>
-                    <input type="email" placeholder="a@florin-pop.com" id="email" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="joe@example.com" id="email" />
+                    <p id="error-email" class="errorForm"></p>
                 </div>
                 <div class="form-control">
-                    <label for="username">Password</label>
+                    <label for="password">Password</label>
                     <input type="password" placeholder="Password" id="password"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <p id="error-password" class="errorForm"></p>
                 </div>
                 <div class="form-control">
-                    <label for="username">Password check</label>
-                    <input type="password" placeholder="Password two" id="password2"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" placeholder="Password" id="password2"/>
+                    <p id="error-password2" class="errorForm"></p>
+                </div>
+                <div class="form-control">
+                    <label for="Region">Region</label>
+                    <select name="Region" id="region">
+                         <option value="opt0">-</option>
+                         <option value="opt1">Americas</option>
+                         <option value="opt2">Europe</option>
+                         <option value="opt3">China</option>
+                         <option value="opt4">Southeast Asia</option>
+                     </select>
+                     <p id="error-region" class="errorForm"></p>
+                </div>
+                <div class="form-control">
+                    <label for="Date">Date of birth</label>
+                    <input type="text" placeholder="DD/MM/YYYY (ex. 01/02/2013)" id="date"/>
+                    <p id="error-date" class="errorForm"></p>
                 </div>
                 <button>Submit</button>
             </form>
