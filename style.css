@@ -6,7 +6,6 @@
 }
 
 body {
-    /* background-color: #2c2f33; */
 	background: linear-gradient(to bottom, rgb(75, 64, 231), rgba(21, 20, 22, 0.5));
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -24,7 +23,6 @@ header {
 
 header img {
 	width: 75px;
-	/* height: auto; */
 	margin-right: auto;
 }
 
@@ -86,7 +84,7 @@ nav ul li ul {
     margin-top: 10px;
 }
 
-/* nav ul li ul {
+ nav ul li ul {
     display: none;
     background-color: wheat;
     position: absolute;
@@ -109,6 +107,7 @@ nav ul li ul {
 footer {
     background-color: #23272a;
     padding: 30px;
+	color: #FFFFFF;
 }
 
 .socialmedia img {
@@ -145,7 +144,7 @@ footer {
 	align-items: center;
 }
 
-/* .mainContent video{
+.mainContent video{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -175,7 +174,7 @@ footer {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-
+/*
 .mainContent .filler{
 	margin-bottom: 100vh;
 } */
